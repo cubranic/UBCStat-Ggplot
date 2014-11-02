@@ -2,8 +2,6 @@ Chapter 6 - Scales, Axes, and Legends
 ========================================================
 author: Derek and Davor
 date: November 3rd, 2014
-width: 1024
-height: 768
 
 
 6.1 Introduction
@@ -73,9 +71,7 @@ Adjust Parameters: Change Appearance of Legend
 ==============================================
 
 ```r
-p + scale_colour_hue("What does\nit eat?",
-                     breaks = c("herbi", "carni", "omni", "NA"),
-                     labels = c("plants", "meat", "both", "don't know"))
+p + scale_colour_hue("What does\nit eat?", breaks = c("herbi", "carni", "omni", "NA"), labels = c("plants", "meat", "both", "don't know"))
 ```
 
 ![plot of chunk unnamed-chunk-4](6 - Scales-figure/unnamed-chunk-4-1.png) 
@@ -91,6 +87,21 @@ p + scale_colour_brewer(palette = "Set1")
 
 ![plot of chunk unnamed-chunk-5](6 - Scales-figure/unnamed-chunk-5-1.png) 
 
+6.4 Scale Details
+=================
+- Position Scales
+- Colour Scales
+- Manual Scales
+- Identity Scale
+
+
+Common Arguments
+================
+- `name`
+- `limits`
+- `breaks` and `labels`
+- `formatter`
+
 
 Axes
 ========================================================
@@ -104,26 +115,89 @@ Change breaks/labels
 Change the order of items
 ========================================================
 
-![plot of chunk unnamed-chunk-6](6 - Scales-figure/unnamed-chunk-6-1.png) 
-
 
 Transformation/Formatting
 ========================================================
 
 
 Legends
-========================================================
+=======
+- Axes and legends are collectively called `guides`.
+- Read from plot, map back to original values
+- Produced automatically using `scales` and `geoms`
+
+
+Components of the Axes and Legend
+=================================
+![alt text](https://raw.githubusercontent.com/cubranic/UBCStat-Ggplot/master/Chapter%206/6%20-%20Scales-figure/table6.12.PNG)
+
+
+Appearance
+==========
+- Breaks determine value of legend keys
+- Geoms determine how keys are drawn
+
+![alt text](https://raw.githubusercontent.com/cubranic/UBCStat-Ggplot/master/Chapter%206/6%20-%20Scales-figure/figure6.13.PNG)
+
+
+Merged Legends
+==============
+- `ggplot` tries to use fewest number of legends.
+-  Will merge legends if they have same legend title
+
+![alt text](https://raw.githubusercontent.com/cubranic/UBCStat-Ggplot/master/Chapter%206/6%20-%20Scales-figure/figure6.14.PNG)
+
+
+Common Tweaks
+=============
+- `name`: axis label and legend title
+- `breaks` and `labels`: tick marks, legend keys, 
+- `axis.*` and `legend.*`: visual appearance of legend
+- `panel.grid.major`, `panel.grid.minor`: gridlines
+- `legend.position`, `legend.justification`: location of legend
+
+
+Prep for Exercise!
+====================
+
+```r
+library(gapminder)
+gDat <- gapminder
+# gDat <- read.delim("http://www.stat.ubc.ca/~rickw/gapminderDataFiveYear.txt")
+```
+
+
+```r
+ggplot(gDat, aes(continent, gdpPercap))+
+  geom_boxplot(aes(fill = continent), outlier.shape = NA)+
+  geom_jitter(alpha = 0.3, position = position_jitter(width = 0.2))+
+  xlab("Continent")+
+  ylab("GDP per capita")+
+  ylim(c(0,40000))+
+  ggtitle("Spread of GDP Per Capita by Continent (All Years) using Boxplots")
+```
+
+Base Graph
+==========
+![plot of chunk unnamed-chunk-8](6 - Scales-figure/unnamed-chunk-8-1.png) 
 
 
 Exercise: Remove the legend
-========================================================
+===========================
 
+![plot of chunk unnamed-chunk-9](6 - Scales-figure/unnamed-chunk-9-1.png) 
 
-Exercise: Reorder items/change text
-========================================================
+Hint: Use `theme()` layer. See ?theme for details.
+
+Exercise: Reorder Items
+=======================
+![plot of chunk unnamed-chunk-10](6 - Scales-figure/unnamed-chunk-10-1.png) 
+
+Hint: Which aesthetic is `continent` mapped to?
 
 
 Exercise: Position the legend
 ========================================================
+![plot of chunk unnamed-chunk-11](6 - Scales-figure/unnamed-chunk-11-1.png) 
 
-- e.g., move the legend with the continents to the top of the graph and turn off the title
+Hint: There's something else other than position changed here...
