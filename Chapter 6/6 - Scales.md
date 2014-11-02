@@ -199,5 +199,3 @@ Hint: Which aesthetic is `continent` mapped to?
 Exercise: Position the legend
 ========================================================
 ![plot of chunk unnamed-chunk-11](6 - Scales-figure/unnamed-chunk-11-1.png) 
-
-Hint: There's something else other than position changed here...

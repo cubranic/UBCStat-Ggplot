@@ -222,7 +222,5 @@ ggplot(gDat, aes(continent, gdpPercap))+
   ylab("GDP per capita")+
   ylim(c(0,40000))+
   ggtitle("Spread of GDP Per Capita by Continent (All Years) using Boxplots") +
-  theme(legend.position = "top", legend.justification = c(1,0))
+  theme(legend.position = "top")
 ```
-
-Hint: There's something else other than position changed here...
