@@ -229,11 +229,9 @@ gDat <- gapminder
 ```{r, eval = FALSE}
 ggplot(gDat, aes(continent, gdpPercap))+
   geom_boxplot(aes(fill = continent), outlier.shape = NA)+
-  geom_jitter(alpha = 0.3, position = position_jitter(width = 0.2))+
-  xlab("Continent")+
-  ylab("GDP per capita")+
-  ylim(c(0,40000))+
-  ggtitle("Spread of GDP Per Capita by Continent (All Years) using Boxplots")
+  labs(x="Continent", y="GDP per capita",
+       title="Spread of GDP Per Capita by Continent (All Years) using Boxplots") +
+  ylim(c(0,40000))
 ```
 
 Base Graph
@@ -241,11 +239,9 @@ Base Graph
 ```{r, echo = FALSE}
 gDatGdp <- ggplot(gDat, aes(continent, gdpPercap))+
   geom_boxplot(aes(fill = continent), outlier.shape = NA)+
-  geom_jitter(alpha = 0.3, position = position_jitter(width = 0.2))+
-  xlab("Continent")+
-  ylab("GDP per capita")+
-  ylim(c(0,40000))+
-  ggtitle("Spread of GDP Per Capita by Continent (All Years) using Boxplots")
+  labs(x="Continent", y="GDP per capita",
+       title="Spread of GDP Per Capita by Continent (All Years) using Boxplots") +
+  ylim(c(0,40000))
 gDatGdp
 ```
 
