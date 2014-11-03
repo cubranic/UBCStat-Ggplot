@@ -7,9 +7,28 @@ date: November 3rd, 2014
 6.1 Introduction
 ========================================================
 
+- Mapping data &rarr; aesthetics
+  - Domain: discrete or continuous
+  - Range: Ggplot aesthetics (size, colour, position, shape)
+  
+- Provide _guides_: 
+  - axes (position scales)
+  - legends (colour, shape, etc.)
+
 
 6.2 How Scales Work
 ========================================================
+
+1. Transformation
+   - e.g., log (natural, base-10, base-2) or square root
+   - performed _before_ statistical summaries
+   
+2. Training
+   - learn the domain of all the scale's layers
+   - anything outside the domain is mapped to `NA`
+   
+3. Mapping
+   - apply function to produce aesthetic values
 
 
 6.3 Usage
@@ -81,10 +100,10 @@ p + scale_colour_brewer(palette = "Set1")
 
 6.4 Scale Details
 =================
-- Position Scales
-- Colour Scales
-- Manual Scales
-- Identity Scale
+- Position scales
+- Colour scales
+- Manual scales
+- Identity scale
 
 
 Common Arguments
@@ -92,25 +111,75 @@ Common Arguments
 - `name`
 - `limits`
 - `breaks` and `labels`
-- `formatter`
+- `formatter`: now provided as `labels`
 
 
-Axes
+Exercises
 ========================================================
+
+- We'll use the PlantGrowth dataset:
+
+```{r}
+bp <- ggplot(PlantGrowth, aes(x=group, y=weight)) + geom_boxplot()
+```
+***
+```{r echo=FALSE}
+bp
+```
 
 
 Change breaks/labels
 ========================================================
-- mention also the grid lines
+
+- Nicer labels to the groups
+- Major grid lines at integer weight
+- Minor grid lines at half-points
+
+***
+
+```{r echo=FALSE}
+bp + scale_y_continuous(breaks=4:6, minor=3:6 + .5) +
+  scale_x_discrete(labels=c('Control', 'Treat 1', 'Treat2'))
+```
 
 
 Change the order of items
 ========================================================
 
+- Order the groups 'trt1', 'ctrl', 'trt2'
+
+***
+
+```{r echo=FALSE}
+bp+scale_x_discrete(limits=c('trt1', 'ctrl', 'trt2'))
+```
+
 
 Transformation/Formatting
 ========================================================
 
+```{r}
+qplot(carat, price, data = diamonds) +
+  scale_x_log10() + scale_y_log10()
+```
+
+Exercise
+========================================================
+
+- Plot on the log10 scale
+- Ticks every $10^\frac{1}{10}$-th carat
+- Nice labels
+- Hint: the `scales` library is useful
+
+***
+
+```{r echo=FALSE}
+library(scales)
+qplot(carat, price, data = diamonds) +
+    scale_x_log10(breaks=10^((-6:6)/10),
+                  labels=trans_format('log10', math_format())) +
+    scale_y_log10()
+```
 
 Legends
 =======
