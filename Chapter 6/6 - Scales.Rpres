@@ -11,7 +11,7 @@ date: November 3rd, 2014
   - Domain: discrete or continuous
   - Range: Ggplot aesthetics (size, colour, position, shape)
   
-- Provide _guides_: 
+- Provide _guides_:
   - axes (position scales)
   - legends (colour, shape, etc.)
 
@@ -239,13 +239,14 @@ ggplot(gDat, aes(continent, gdpPercap))+
 Base Graph
 ==========
 ```{r, echo = FALSE}
-ggplot(gDat, aes(continent, gdpPercap))+
+gDatGdp <- ggplot(gDat, aes(continent, gdpPercap))+
   geom_boxplot(aes(fill = continent), outlier.shape = NA)+
   geom_jitter(alpha = 0.3, position = position_jitter(width = 0.2))+
   xlab("Continent")+
   ylab("GDP per capita")+
   ylim(c(0,40000))+
   ggtitle("Spread of GDP Per Capita by Continent (All Years) using Boxplots")
+gDatGdp
 ```
 
 
@@ -253,14 +254,7 @@ Exercise: Remove the legend
 ===========================
 
 ```{r, echo = FALSE}
-ggplot(gDat, aes(continent, gdpPercap))+
-  geom_boxplot(aes(fill = continent), outlier.shape = NA)+
-  geom_jitter(alpha = 0.3, position = position_jitter(width = 0.2))+
-  xlab("Continent")+
-  ylab("GDP per capita")+
-  ylim(c(0,40000))+
-  ggtitle("Spread of GDP Per Capita by Continent (All Years) using Boxplots") +
-  theme(legend.position = "none")
+gDatGdp + theme(legend.position = "none")
 ```
 
 Hint: Use `theme()` layer. See ?theme for details.
@@ -268,13 +262,7 @@ Hint: Use `theme()` layer. See ?theme for details.
 Exercise: Reorder Items
 =======================
 ```{r, echo = FALSE}
-ggplot(gDat, aes(continent, gdpPercap))+
-  geom_boxplot(aes(fill = continent), outlier.shape = NA)+
-  geom_jitter(alpha = 0.3, position = position_jitter(width = 0.2))+
-  xlab("Continent")+
-  ylab("GDP per capita")+
-  ylim(c(0,40000))+
-  ggtitle("Spread of GDP Per Capita by Continent (All Years) using Boxplots") +
+gDatGdp +
   scale_fill_discrete(breaks = c("Oceania","Europe", "Americas", "Asia", "Africa"))
 ```
 
@@ -284,12 +272,6 @@ Hint: Which aesthetic is `continent` mapped to?
 Exercise: Position the legend
 ========================================================
 ```{r, echo = FALSE}
-ggplot(gDat, aes(continent, gdpPercap))+
-  geom_boxplot(aes(fill = continent), outlier.shape = NA)+
-  geom_jitter(alpha = 0.3, position = position_jitter(width = 0.2))+
-  xlab("Continent")+
-  ylab("GDP per capita")+
-  ylim(c(0,40000))+
-  ggtitle("Spread of GDP Per Capita by Continent (All Years) using Boxplots") +
+gDatGdp +
   theme(legend.position = "top")
 ```
