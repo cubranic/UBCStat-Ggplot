@@ -7,9 +7,28 @@ date: November 3rd, 2014
 6.1 Introduction
 ========================================================
 
+- Mapping data &rarr; aesthetics
+  - Domain: discrete or continuous
+  - Range: Ggplot aesthetics (size, colour, position, shape)
+  
+- Provide _guides_:
+  - axes (position scales)
+  - legends (colour, shape, etc.)
+
 
 6.2 How Scales Work
 ========================================================
+
+1. Transformation
+   - e.g., log (natural, base-10, base-2) or square root
+   - performed _before_ statistical summaries
+   
+2. Training
+   - learn the domain of all the scale's layers
+   - anything outside the domain is mapped to `NA`
+   
+3. Mapping
+   - apply function to produce aesthetic values
 
 
 6.3 Usage
@@ -89,10 +108,10 @@ p + scale_colour_brewer(palette = "Set1")
 
 6.4 Scale Details
 =================
-- Position Scales
-- Colour Scales
-- Manual Scales
-- Identity Scale
+- Position scales
+- Colour scales
+- Manual scales
+- Identity scale
 
 
 Common Arguments
@@ -100,25 +119,66 @@ Common Arguments
 - `name`
 - `limits`
 - `breaks` and `labels`
-- `formatter`
+- `formatter`: now provided as `labels`
 
 
-Axes
+Exercises
 ========================================================
+
+- We'll use the PlantGrowth dataset:
+
+
+```r
+bp <- ggplot(PlantGrowth, aes(x=group, y=weight)) + geom_boxplot()
+```
+***
+![plot of chunk unnamed-chunk-7](6 - Scales-figure/unnamed-chunk-7-1.png) 
 
 
 Change breaks/labels
 ========================================================
-- mention also the grid lines
+
+- Nicer labels to the groups
+- Major grid lines at integer weight
+- Minor grid lines at half-points
+
+***
+
+![plot of chunk unnamed-chunk-8](6 - Scales-figure/unnamed-chunk-8-1.png) 
 
 
 Change the order of items
 ========================================================
 
+- Order the groups 'trt1', 'ctrl', 'trt2'
+
+***
+
+![plot of chunk unnamed-chunk-9](6 - Scales-figure/unnamed-chunk-9-1.png) 
+
 
 Transformation/Formatting
 ========================================================
 
+
+```r
+qplot(carat, price, data = diamonds) +
+  scale_x_log10() + scale_y_log10()
+```
+
+![plot of chunk unnamed-chunk-10](6 - Scales-figure/unnamed-chunk-10-1.png) 
+
+Exercise
+========================================================
+
+- Plot on the log10 scale
+- Ticks every $10^\frac{1}{10}$-th carat
+- Nice labels
+- Hint: the `scales` library is useful
+
+***
+
+![plot of chunk unnamed-chunk-11](6 - Scales-figure/unnamed-chunk-11-1.png) 
 
 Legends
 =======
@@ -170,32 +230,30 @@ gDat <- gapminder
 ```r
 ggplot(gDat, aes(continent, gdpPercap))+
   geom_boxplot(aes(fill = continent), outlier.shape = NA)+
-  geom_jitter(alpha = 0.3, position = position_jitter(width = 0.2))+
-  xlab("Continent")+
-  ylab("GDP per capita")+
-  ylim(c(0,40000))+
-  ggtitle("Spread of GDP Per Capita by Continent (All Years) using Boxplots")
+  labs(x="Continent", y="GDP per capita",
+       title="Spread of GDP Per Capita by Continent (All Years) using Boxplots") +
+  ylim(c(0,40000))
 ```
 
 Base Graph
 ==========
-![plot of chunk unnamed-chunk-8](6 - Scales-figure/unnamed-chunk-8-1.png) 
+![plot of chunk unnamed-chunk-14](6 - Scales-figure/unnamed-chunk-14-1.png) 
 
 
 Exercise: Remove the legend
 ===========================
 
-![plot of chunk unnamed-chunk-9](6 - Scales-figure/unnamed-chunk-9-1.png) 
+![plot of chunk unnamed-chunk-15](6 - Scales-figure/unnamed-chunk-15-1.png) 
 
 Hint: Use `theme()` layer. See ?theme for details.
 
 Exercise: Reorder Items
 =======================
-![plot of chunk unnamed-chunk-10](6 - Scales-figure/unnamed-chunk-10-1.png) 
+![plot of chunk unnamed-chunk-16](6 - Scales-figure/unnamed-chunk-16-1.png) 
 
 Hint: Which aesthetic is `continent` mapped to?
 
 
 Exercise: Position the legend
 ========================================================
-![plot of chunk unnamed-chunk-11](6 - Scales-figure/unnamed-chunk-11-1.png) 
+![plot of chunk unnamed-chunk-17](6 - Scales-figure/unnamed-chunk-17-1.png) 
