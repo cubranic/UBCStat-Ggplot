@@ -1,0 +1,306 @@
+Chapter 8 - Themes
+========================================================
+author: Davor
+date: November 24, 2014
+
+
+```{r echo=FALSE}
+library(ggplot2)
+opts_knit$set(self.contained = TRUE)
+```
+
+
+Themes in Ggplot
+====
+- Control appearance of non-data elements
+- E.g., title and axis label fonts, grid lines, background colour
+
+
+Applying themes
+========
+- Built-in themes (call with `theme_`_name_`()`):
+  - grey
+  - bw
+  - linedraw
+  - light
+  - minimal
+  - classic
+- Set as default: `theme_set(theme_light())`
+- Apply locally: `qplot() + theme_classic()`
+
+
+Adjusting theme elements
+=====
+- `theme(`_element_` = ` _element_function_`)`
+
+```{r theme-element}
+qplot(mpg, wt, data = mtcars) + 
+  theme(plot.background = element_rect(size=2, colour = 'black'))
+```
+
+
+Theme elements
+========
+Hierarchy of names separated by dots:
+- plot:
+  - title,  background
+- axis:
+  - text (x and y), title (x and y)
+  - line, ticks
+- panel:
+  - grid.major, grid.minor
+  - background, border
+- legend:
+  - text, title
+  - background, key
+- strip:
+  - text (x and y)
+  - background
+
+
+Element functions
+=====
+**Names changed from the book!!**
+
+- `element_text`: text, title
+- `element_line`: line, ticks, grid
+- `element_rect`: background, border, key 
+
+
+Exercises
+========================================================
+- We'll use the PlantGrowth dataset:
+
+```{r}
+bp <- ggplot(PlantGrowth, aes(x=group, y=weight)) + geom_boxplot() + ggtitle('Plant Growth')
+```
+***
+```{r echo=FALSE}
+bp
+```
+
+
+Exercise: Change label appearance
+========================================================
+- Hide the X-axis label
+- Make the title twice as big as base size
+- Rotate X-axis tick marks
+
+***
+```{r echo=FALSE}
+bp + theme(axis.title.x = element_blank(), 
+           axis.text.x = element_text(angle=90, vjust=.5), 
+           plot.title = element_text(size=rel(2)))
+```
+
+
+Exercise: Manipulate grid lines
+===========
+- Make horizontal major grid lines dotted
+- Hide horizontal minor grid lines
+- Hide all vertical lines
+
+***
+```{r echo=FALSE}
+bp + theme(panel.grid.major.x = element_blank(), 
+           panel.grid.major.y = element_line(linetype='dotted'), 
+           panel.grid.minor.y = element_blank())
+```
+
+
+Exercise: Legend
+====
+```{r eval=FALSE}
+bpl <- bp + aes(fill=group)
+```
+
+***
+```{r echo=FALSE}
+bpl <- bp + aes(fill=group)
+bpl
+```
+
+
+Exercise: Hide legend
+===
+```{r eval=FALSE}
+bpl + theme(legend.position = "none")
+```
+***
+```{r echo=FALSE}
+bpl + theme(legend.position = "none")
+```
+
+
+Exercise: Legend placement
+=====
+- Move legend to the bottom-right corner
+
+***
+```{r echo=FALSE}
+bpl + theme(legend.justification = c(1,0),
+            legend.position = c(1, 0))
+```
+
+
+Exercise: Legend appearance
+======
+- Put a gray rectangle behind the legend
+- Make legend title italic
+
+***
+```{r echo=FALSE}
+bpl + theme(legend.background = element_rect(fill="gray90"),
+            legend.title = element_text(face='italic'))
+```
+
+
+Exercise: Facetting
+=====
+- Density plot of 'weight' facetted by 'group'
+  ```{r eval = FALSE}
+  qplot(weight, data = PlantGrowth, geom = 'density') + 
+    facet_wrap(~group)
+  ```
+- Facet labels are bold on pink background
+
+***
+```{r echo = FALSE}
+qplot(weight, data = PlantGrowth, geom = 'density') + 
+  facet_wrap(~group) + 
+  theme(strip.background = element_rect(fill = "pink"),
+        strip.text = element_text(face = 'bold')) 
+```
+
+
+Customizing scale defaults
+=====
+- **Changed from the book!!**
+- `set_default_scale` has been removed
+- To change the default scale for an aesthetic, create a function called
+ `scale_`_aesthetic_`_`_type_ that returns the desired scale
+  - scale type is usually "continuous"" or "discrete"
+  - e.g., `scale_fill_continuous` defines the default _continuous_ scale for
+    the _fill_ aesthetic
+- To restore the Ggplot2's default scale, remove the object you just created
+  (e.g., `rm(scale_fill_continuous)`)
+
+
+Example: Customizing scale defaults
+======
+```{r eval=FALSE}
+p <- qplot(mpg, wt, data = mtcars, colour = factor(cyl))
+p
+## Use Brewer as the default discrete colour scale
+scale_colour_discrete <- scale_colour_brewer
+p
+## Restore defaults
+rm(scale_colour_discrete)
+p
+```
+***
+```{r scale-defaults, echo=FALSE, fig.height=3}
+p <- qplot(mpg, wt, data = mtcars, colour = factor(cyl))
+p
+```
+```{r scale-customize, echo=FALSE, fig.height=3}
+scale_colour_discrete <- scale_colour_brewer
+p
+rm(scale_colour_discrete)
+```
+
+
+Ggthemes
+========
+- Package of additional Ggplot themes
+- Available on CRAN
+  ```{r eval=FALSE}
+  install.packages('ggthemes', dependencies = TRUE)
+  ```
+- Development version on Github comes with more themes:
+  ```{r eval=FALSE}
+  install_github('jrnold/ggthemes')
+  library(ggthemes)
+  ```
+
+
+Tufte
+======
+```{r eval=FALSE}
+qplot(wt, mpg, data = mtcars) +
+  geom_rangeframe() +
+  theme_tufte()
+```
+***
+```{r tufte, echo=FALSE}
+library(ggthemes)
+qplot(wt, mpg, data = mtcars) +
+  geom_rangeframe() +
+  theme_tufte()
+```
+
+
+Economist
+=========
+```{r eval=FALSE}
+qplot(wt, mpg, data = mtcars, colour = factor(cyl)) +
+  theme_economist() +
+  scale_colour_economist() +
+  ggtitle('Small is beautiful')
+```
+***
+```{r economist, echo=FALSE}
+qplot(wt, mpg, data = mtcars, colour = factor(cyl)) +
+  theme_economist() +
+  scale_colour_economist() +
+  ggtitle('Small is beautiful')
+```
+
+
+Wall Street Journal
+===================
+```{r eval=FALSE}
+qplot(hp, mpg, data= mtcars, color = factor(cyl)) +
+ geom_smooth(method = "lm", se = FALSE) +
+ scale_colour_wsj("colors6", "") +
+ theme_wsj()
+``` 
+***
+```{r wsj, echo=FALSE}
+qplot(hp, mpg, data= mtcars, color = factor(cyl)) +
+ geom_smooth(method = "lm", se = FALSE) +
+ scale_colour_wsj("colors6", "") +
+ theme_wsj()
+``` 
+
+
+Excel
+=====
+```{r eval=FALSE}
+ggplot(diamonds, aes(clarity, fill=cut)) +
+ geom_bar() +
+ scale_fill_excel() +
+ theme_excel()
+```
+***
+```{r excel, echo=FALSE}
+ggplot(diamonds, aes(clarity, fill=cut)) +
+ geom_bar() +
+ scale_fill_excel() +
+ theme_excel()
+```
+
+
+XKCD
+====
+- http://xkcd.r-forge.r-project.org
+
+  ![XKCD demo plot](http://xkcd.r-forge.r-project.org/GrHomoSapiens.png)
+
+- I couldn't get it to find the 'xkcd' font I installed (on OS X), YMWV
+
+
+Ggplot2 Theme Builder
+=====
+- Shiny app for a point-and-click way to build Ggplot2 themes
+- https://bchartoff.shinyapps.io/ggShinyApp/
