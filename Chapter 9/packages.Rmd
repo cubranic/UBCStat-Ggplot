@@ -1,0 +1,287 @@
+---
+title: "Chapter 9 Data Aggregation Packages"
+author: "Derek Chiu"
+date: "Monday, December 08, 2014"
+output: slidy_presentation
+---
+
+## Introduction
+
+Data aggregation and data visualization go hand in hand. You usually cannot do one without the other.
+
+In R, there are a number of handy packages that allow us to do data aggregation
+
+- `plyr`
+- `dplyr`
+- `reshape2`
+- `tidyr`
+
+## plyr
+
+Package for split-apply-combine notion of data aggregation.
+
+- Data set is __split__ on some variable
+- A function is __applied__ on each split
+- Results from each split __combined__ together back to one data set
+
+There is a family of functions with `??ply` where the first __?__ can be one of "a", "d", or "l", and the second __?__ can be one of "a", "d", "l", or "_".
+
+- d = data frame
+- a = array
+- l = list
+- _ = discard
+
+The most common function used is `ddply`, taking a `data.frame` and getting back a `data.frame`.
+
+## Example 1: summarize() function
+
+```{r}
+library(plyr)
+library(gapminder)
+gDat <- gapminder
+avg_lifeExp <- ddply(gDat, ~ country, summarize, meanLE = round(mean(lifeExp), 2))
+```
+
+```{r, echo = FALSE, results = 'asis'}
+knitr::kable(avg_lifeExp)
+```
+
+## Example 2: custom functions
+
+```{r}
+get_meanLE <- function(data) {
+	lifeExp <- data$lifeExp
+	meanLE <- round(mean(lifeExp), 2)
+	setNames(meanLE, "meanLE")
+}
+
+avg_lifeExp2 <- ddply(gDat, .(country), get_meanLE)
+```
+
+```{r, echo = FALSE, results = 'asis'}
+knitr::kable(avg_lifeExp2)
+```
+
+## Exercise 1: Country-Specific Linear Regression
+
+Write a function to fit a __linear model__ of life expectancy as a function of year. Apply this function to every country to get country-specific linear fits. Combine all the linear fits into a list, where each element is a fit of a linear model for a different country.
+
+__Hint:__ Write a custom function.
+
+```{r, echo = FALSE}
+regLE <- function(data, offset = 1952) {
+  lm(lifeExp ~ I(year - 1952), data)
+}
+
+all_models <- dlply(gDat, ~ country, regLE)
+```
+
+## Example 3: Country-Specific Coefficients
+
+```{r}
+all_models[["Canada"]]
+
+coefs <- ldply(all_models, coef)
+```
+
+```{r, echo = FALSE, results = 'asis'}
+knitr::kable(head(coefs))
+```
+
+## dplyr
+
+Essentially a wrapper around `plyr` specifically for `data.frames`. For large data sets, computational time is faster because implementation uses C++. In most cases, the difference is not significant.
+
+Load `plyr` before `dplyr`.
+
+```{r}
+library(dplyr)
+```
+
+## The forward-pipe operator
+
+`%>%` is known as the `magrittr` forward-pipe operator. It is from the `magrittr` package and very useful in conjunction with `dplyr`. Useful when chaining together multiple commands on data being continuously updated.
+
+Logic is similar to piping in Linux.
+
+Keyboard shortcut is __Ctrl + Shift + M__.
+
+The following lines of code are equivalent
+
+```{r}
+dim(head(gDat))
+
+gDat %>%
+	head %>%
+	dim
+```
+
+## tbl_df and glimpse()
+A `tbl_df` is a wrapper around the usual `data.frame`. It is advantageous because it only prints the first few rows without specifying `head()`.
+
+```{r}
+gDat_tbl <- tbl_df(gDat)
+gDat_tbl
+```
+
+The `glimpse()` function from `dplyr` is an alternative to our familiar `str()` for looking at the structure of data sets but shows minimal information.
+
+```{r}
+glimpse(gDat_tbl)
+```
+
+## Essential dplyr operations
+
+- `filter()`: chooses rows with matching conditions (like `subset()`)
+- `select()`: chooses columns with matching conditions
+- `rename()`: renames columns
+- `mutate()`: adds new variables or changes existing ones
+- `group_by()` group by one or more variables
+- `arrange()`: sorts variables
+- `summarize()`: summarises multiple values to a single value
+
+## Example 4: Using the operations
+
+```{r}
+hDat <- gDat_tbl %>%
+	filter(continent != "Oceania") %>%
+	select(-lifeExp) %>%
+	rename(nation = country) %>%
+	mutate(gdp = pop * gdpPercap) %>%
+	group_by(nation) %>%
+	summarize(mean_gdp = mean(gdp)) %>%
+	arrange(desc(mean_gdp))
+```
+
+```{r, echo = FALSE, results = 'asis'}
+knitr::kable(head(hDat))
+```
+
+`summarize()` is very powerful: it allows you to operate on new variables created in real-time.
+
+## Exercise 2: Change in GDP per capita by Continent
+Create a graph that shows how average GDP per capita is changing over time for each continent _except_ Asia.
+
+__Hint:__ For each `continent` and `year` combo, you want a value for the average `gdpPercap`.
+
+_Bonus: Make the ordering of continents consistent between data and legend._
+
+```{r, echo = FALSE}
+ex2 <- gDat_tbl %>%
+	filter(continent != "Asia") %>%
+	group_by(continent, year) %>%
+  summarize(mean_gdpPercap = mean(gdpPercap)) %>%
+	as.data.frame %>%
+	mutate(continent = reorder(continent, mean_gdpPercap))
+```
+
+```{r, echo = FALSE}
+library(ggplot2)
+ggplot(ex2, aes(factor(year), mean_gdpPercap, 
+								colour = continent, group = continent))+
+  geom_line(lwd = 1)+
+  xlab("Year")+
+  ylab("Average GDP per capita")+
+  ggtitle("Change in Average Life Expectancy by Continent")+
+	theme(plot.title = element_text(face = "bold"))+
+  scale_colour_manual(values = c(2:5),
+                      name = "Continent")+
+	guides(color = guide_legend(reverse = TRUE))
+```
+
+## reshape2
+Changes data between __wide__ and __long__ format.
+
+__Wide format:__
+
+- easy on the eye
+- each variable has a different column
+- contingency table format
+
+__Long format:__
+
+- harder to analyze
+- better for use in making plots
+- one column for values
+- indicator column that explains what variable the value belongs to
+- many repeated entries
+
+## melt and cast
+
+```{r}
+library(reshape2)
+```
+
+- `melt()` converts data format from wide to long
+- `cast()` converts data format from long to wide
+
+We will focus on `dcast()` for `data.frames`.
+
+## Example 5: Reshaping Data 
+In our previous exercise, the `ex2` dataset was in long format:
+
+```{r}
+head(ex2)
+```
+
+It is difficult to analyze time series trends, so we should change it to wide format using `dcast()`:
+
+```{r}
+ex2_wide <- dcast(ex2, continent ~ year, value.var = "mean_gdpPercap")
+```
+
+```{r, echo = FALSE, results = 'asis'}
+knitr::kable(ex2_wide)
+```
+
+If we wanted to change it back to long format, we can use `melt()`:
+
+```{r}
+ex2_long <- melt(ex2_wide, id.var = "continent", variable.name = "year",
+								 value.name = "mean_gdpPercap") %>% 
+	arrange(continent, year)
+```
+
+```{r, echo = FALSE, results = 'asis'}
+knitr::kable(ex2_long)
+```
+
+## Exercise 3: Use tidyr
+
+```{r}
+library(tidyr)
+ex3 <- ex2
+```
+
+In the package `tidyr`, there are easier implementations of reshaping data:
+
+- `gather()` is like `melt()`
+- `spread()` is like `dcast()`
+
+Read on the function documentations and try to repeat what I did with `ex2` but using functions from `tidyr`. In other words, obtain a `ex3_wide` from `ex3` by using `spread()`, and obtain a `ex3_long` from `ex3_wide` by using `gather()`.
+
+```{r, echo = FALSE}
+ex3_wide <- ex3 %>%
+	spread(key = year, value = mean_gdpPercap)
+```
+
+```{r, echo = FALSE}
+ex3_long <- ex3_wide %>%
+	gather(key = year, value = mean_gdpPercap, 2:13) %>%
+	arrange(continent, year)
+```
+
+```{r}
+ex3_wide
+ex3_long
+```
+
+## Other useful packages
+
+- `magrittr`: more operators for piping
+- `broom`: converts objects from statistical analysis into tidy data frames
+
+## End
+
+Thank you!
+
