@@ -1,0 +1,349 @@
+"winery" "address" "city" "app" "lat" "lon"
+"Acacia Winery" "2750 Las Amigas Road" "Napa" "Yes" 38.2306038 -122.3487628
+"Allora Wines" "3244 Elhlers Lane" "St. Helena" "Yes" 38.536305 -122.493788
+"Alpha Omega Winery" "Hwy 29 at 1155 Mee Lane " "Rutherford" "No" 38.4703274 -122.4312328
+"Altamura Vineyards & Winery" "1700 Wooden Valley Road" "Napa" "Yes" 38.3643612 -122.1750562
+"Amethyst Winery" "1339 Pearl St. Suite #201" "Napa" "Yes" 38.298905 -122.289472
+"Amizetta" "1099 Greenfield Rd" "St. Helena" "Yes" 38.521258 -122.380629
+"Ancien Wines" "4047 E. Third Ave" "Napa" "Yes" 38.298408 -122.235013
+"Anderson's Conn Valley" "680 Rossi Road" "St. Helena" "Yes" 38.5149593 -122.4128899
+"Andesite Vineyard" "4011 Spring Mountain Road" "St. Helena" "Yes" 38.521744 -122.54588
+"Andretti Winery" "4162 Big Ranch Road " "Napa" "No" 38.3547481 -122.3075097
+"Andrew Geoffrey Vineyard" "836 Chiles Avenue" "St. Helena" "Yes" 38.506653 -122.465838
+"Andrew Lane Winery" "742 Sunnyside Road" "St. Helena" "Yes" 38.538714 -122.466084
+"Artesa Winery" "1345 Henry Road " "Napa" "No" 38.2694716 -122.3569655
+"Atalon Winery" "3299 Bennett Lane " "Calistoga" "Yes" 38.5994878 -122.6103647
+"Atlas Peak" "3700 Soda Canyon Road " "Napa" "Yes" 38.417014 -122.285308
+"August Briggs" "1307-B Lincoln Avenue" "Calistoga" "No" 38.5775125 -122.5796952
+"Baldacci Vineyards" "6236 Silverado Trail" "Yountville" "No" 38.4208483 -122.3379758
+"Ballentine Vineyards" "2820 St. Helena Highway N" "St. Helena" "No" 38.520685 -122.490134
+"Barlow Vineyards" "4411 Silverado Trail " "Calistoga" "Yes" 38.5764764 -122.5385983
+"Barnett Vineyards" "4070 Spring Mountain Road " "St. Helena" "Yes" 38.533235 -122.552946
+"Beaulieu Vineyard (BV)" "1960 St. Helena Highway " "Rutherford" "No" 38.4596674 -122.4236112
+"Bell Wine Cellars" "6200 Washington Street" "Yountville" "Yes" 38.3885161 -122.3464247
+"Bello Family Vineyards" "929 Main Street" "St. Helena" "No" 38.5014323 -122.4649275
+"Benessere Vineyards" "1010 Big Tree Road" "St. Helena" "Yes" 38.552377 -122.506042
+"Bennett Lane Winery" "3340 Highway 128 " "Calistoga" "No" 38.598105 -122.6188463
+"Beringer" "2000 Main St " "St. Helena" "No" 38.5100989 -122.4798816
+"Black Cat Vineyard" "1075 Shadybrook Lane" "Napa" "Yes" 38.295756 -122.220021
+"Black Stallion" "4089 Silverado Trail" "Napa" "No" 38.3598318 -122.2906388
+"Bolen Vineyards" "3277 Dry Creek Road" "Napa" "Yes" 38.3389 -122.360427
+"Bouchaine Vineyards" "1075 Buchli Station Road " "Napa" "No" 38.2261958 -122.3316124
+"Bounty Hunter" "975 First Street" "Napa" "No" 38.2992728 -122.2851067
+"Bourassa Winery" "190 Camino Oruga Ste. 5" "Napa" "Yes" 38.227817 -122.253927
+"Boyd Family Vineyards" "4042 Big Ranch Road" "Napa" "Yes" 38.353292 -122.296937
+"Bravante Vineyards" "330 Stone Ridge Road" "Angwin" "Yes" 38.567453 -122.463395
+"Bremer Family" "975 Deer Park Road " "St. Helena" "Yes" 38.5510916 -122.4709178
+"Buehler Vineyards" "820 Greenfield Road " "St. Helena" "Yes" 38.512572 -122.379747
+"Burgess Cellars" "1108 Deer Park Road " "St. Helena" "Yes" 38.5032774 -122.4669345
+"Ca' Momi Wines" "2515 Napa Valley Corp. Dr" "Napa" "No" 38.255468 -122.275389
+"Cade Mountain Winery" "360 Howell Mountain Road" "Angwin" "Yes" 38.5607796 -122.4482445
+"Cafaro Cellars" "Winery Address N/A" "St. Helena" "Yes" 38.5052429 -122.4703868
+"Cain" "3800 Langtry Road " "St. Helena" "Yes" 38.4978388 -122.5380569
+"Cakebread" "8300 St. Helena Highway " "Rutherford" "Yes" 38.4478968 -122.4107388
+"Calafia Cellars" "629 Fulton Lane" "St. Helena" "Yes" 38.512382 -122.468808
+"Caldwell Cave Winery" "270 Kruezer Lane" "Napa" "Yes" 38.2869459 -122.2358185
+"Cali 351" "Silverado Trail" "Calistoga" "No" 38.5746732 -122.5403594
+"Calistoga Cellars" "Main Street" "St. Helena" "No" 38.5055289 -122.4707316
+"Canard Vineyard" "1016 Dunaweal Lane" "Calistoga" "Yes" 38.5760239 -122.55506
+"Cardinale Estate" "7600 St. Helena Highway " "Oakville" "Yes" 38.4300594 -122.3895649
+"Carneros Wine Co" "708 1st Street" "Napa" "No" 38.3010772 -122.2822244
+"Carter Cellars" "1170 Tubbs Lane" "Calistoga" "No" 38.5919674 -122.6020498
+"Casa Nuestra" "3451 Silverado Trail " "St. Helena" "Yes" 38.5531039 -122.498561
+"Castello di Amorosa" "4045 North St Helena Hwy " "Calistoga" "No" 38.5584135 -122.5425196
+"Caymus Vineyards" "8700 Conn Creek Road" "Rutherford" "Yes" 38.473301 -122.393897
+"Ceja Estate" "1016 Las Amigas Road " "Napa" "Yes" 38.2356203 -122.3144292
+"Chappellet" "1581 Sage Canyon Road" "St. Helena" "Yes" 38.478178 -122.329752
+"Charles Krug" "2800 Main Street" "St. Helena" "No" 38.518711 -122.481777
+"Charter Oak Winery" "1636 Scott Street" "St. Helena" "Yes" 38.502519 -122.477535
+"Chase Family Cellars" "2252 Sulphur Springs" "St. Helena" "Yes" 38.4864923 -122.4686966
+"Chateau Boswell" "3468 Silverado Trail" "St. Helena" "Yes" 38.5531218 -122.4985321
+"Chateau de Vie" "3250 Highway 128" "Calistoga" "Yes" 38.5938368 -122.6124274
+"Chateau Montelena" "1429 Tubbs Lane " "Calistoga" "No" 38.6034975 -122.5973582
+"Chimney Rock" "5350 Silverado Trail " "Napa" "No" 38.388362 -122.310787
+"Cliff Lede" "1473 Yountville Cross Road " "Yountville" "No" 38.4262596 -122.3427199
+"Clos Du Val" "5330 Silverado Trail  " "Napa" "No" 38.3872129 -122.3127035
+"Clos Pegase" "1060 Dunaweal Lane " "Calistoga" "No" 38.5723407 -122.5551261
+"Conn Creek/Villa Mt. Eden" "8711 Silverado Trail " "St. Helena" "No" 38.4846898 -122.401074
+"Constant Diamond Mountain" "2121 Diamond Mountain Rd" "Calistoga" "Yes" 38.5430127 -122.5793386
+"Corison" "987 St. Helena Highway" "St. Helena" "Yes" 38.4855734 -122.4461825
+"Cosentino" "7415 St. Helena Highway " "Yountville" "No" 38.4192254 -122.3889286
+"Crosby Roamann" "1832 Soscal Ave Suite 115" "Napa" "Yes" 38.3081274 -122.2834091
+"Cuvaison Napa" "1221 Duhig Road " "Napa" "Yes" 38.2507658 -122.3474156
+"Cuvaison St. Helena" "4550 Silverado Trail N" "St. Helena" "No" 38.5569254 -122.5052095
+"D.R. Stephens Estate" "1860 Howell Mountain Rd" "St. Helena" "Yes" 38.5095058 -122.4419635
+"Darioush" "4240 Silverado Trail " "Napa" "Yes" 38.3675193 -122.2945693
+"David Arthur Vineyards" "1521 Sage Canyon Road" "St. Helena" "Yes" 38.4916664 -122.3444809
+"David Fulton Winery" "825 Fulton Lane" "St. Helena" "Yes" 38.5104728 -122.4701605
+"Del Bondio Family Winery" "1333 Bella Oaks Lane" "Napa" "Yes" 38.446412 -122.417293
+"Del Dotto Estate" "1445 Highway 29" "St. Helena" "Yes" 38.5057062 -122.4710632
+"Del Dotto Vineyards" "11055 Atlas Peak Road" "Napa" "Yes" 38.4186475 -122.2491033
+"Delectus Winery" "908 Enterprise Way #C" "Napa" "Yes" 38.2593484 -122.2731316
+"Diamond Terrace" "1391 Diamond Mtn. Road" "Calistoga" "Yes" 38.5636236 -122.5693671
+"Domain Chandon" "1 California Drive" "Yountville" "No" 38.3979722 -122.3642474
+"Domain Charbay" "4001 Spring Mountain Road" "St. Helena" "Yes" 38.5210762 -122.541363
+"Domaine Carneros" "1240 Duhig Rd" "Napa" "No" 38.2554415 -122.351327
+"Duckhorn" "1000 Lodi Lane" "Calistoga" "Yes" 38.5787965 -122.5797054
+"Dutch Henry Winery" "4310 Silverado Trail" "Calistoga" "No" 38.5770911 -122.5247883
+"Eagle's Trace" "680 Rossi Road" "St. Helena" "Yes" 38.5149593 -122.4128899
+"Ehlers Estate" "3222 Ehlers Lane " "St. Helena" "No" 38.5318828 -122.4981484
+"El Molino Winery" "3781 Silverado Trail" "St. Helena" "Yes" 38.5556809 -122.5033604
+"Elan Vineyards" "4500 Atlas Peak Road" "Napa" "Yes" 38.4461299 -122.249512
+"Elizabeth Spencer" "1165 Rutherford Road " "Rutherford" "No" 38.4590401 -122.4219391
+"Elkhorn Peak Cellars" "200 Polson Road" "Napa" "Yes" 38.22699 -122.219872
+"Elyse" "2100 Hoffman Lane" "Napa" "Yes" 38.3835695 -122.3544507
+"Envy Wines" "1170 Tubbs Lane" "Calistoga" "Yes" 38.5919674 -122.6020498
+"Erna Schein" "4078 Spring Mountain Rd." "St. Helena" "Yes" 38.532339 -122.557484
+"Etude" "1250 Cuttings Wharf Road" "Napa" "Yes" 38.2458215 -122.3150228
+"Failla" "3530 Silverado Trail" "St. Helena" "Yes" 38.5531218 -122.4985321
+"Falcor Wine Cellars" "1606 Main Street #206" "Napa" "Yes" 38.3035622 -122.2888859
+"Far Niente " "1350 Acacia Drive " "Oakville" "Yes" 38.4239137 -122.4024768
+"Farella Vineyard" "2222 North Third Avenue " "Napa" "Yes" 38.3115669 -122.224585
+"Faustini Wines" "270 Kruezer Lane" "Napa" "Yes" 38.2869459 -122.2358185
+"Fleury Estate" "950 Galleron Lane " "Rutherford" "Yes" 38.4811805 -122.4243522
+"Flora Springs Estate" "1978 West Zinfandel Lane" "St. Helena" "Yes" 38.4766911 -122.4505105
+"Flora Springs, The Room" "677 S. St. Helena Hwy" "St. Helena" "No" 38.4882159 -122.4498208
+"Flying Horse Winery" "1600 Aetna Springs Road" "Pope Valley" "Yes" 38.6545786 -122.4839055
+"Foley Johnson" "8350 St. Helena Highway" "Rutherford" "Yes" 38.4502902 -122.4135975
+"Folie A Deux" "7481 St. Helena Highway " "Oakville" "No" 38.4211272 -122.3902771
+"Folio Wines" "1285 Dealy Lane" "Napa" "No" 38.2685619 -122.3479151
+"Fontanella Family Winery" "1721 Partrick Road" "Napa" "No" 38.3133184 -122.3732499
+"Forman Vineyards" "1501 Big Rock Road" "St. Helena" "Yes" 38.5176253 -122.4470831
+"Franciscan Oakville Estate" "1178 Galleron Road " "St. Helena" "No" 38.4748282 -122.4322737
+"Frank Family Vineyards" "1091 Larkmead Lane " "Calistoga" "No" 38.5629839 -122.5208702
+"Franus Wine Company" "2055 Hoffman Lane" "Yountville" "Yes" 38.3823719 -122.352944
+"Frazier Winery" "70 Rapp Lane" "Napa" "Yes" 38.3089313 -122.2463849
+"Freemark Abbey" "3022 St Helena Highway N" "St. Helena" "No" 38.5243763 -122.4972929
+"Frias Family Vineyard" "3125 North St. Helena Hwy" "St. Helena" "Yes" 38.527991 -122.5026655
+"Frog's Leap Winery" "8815 Conn Creek Road" "Rutherford" "Yes" 38.472466 -122.401232
+"Gandona Estate" "1535 Sage Canyon Road" "St. Helena" "Yes" 38.4830047 -122.3555319
+"Gargiulo Vineyards" "575 Oakville Crossroad" "Napa" "Yes" 38.2975381 -122.286865
+"Girard Winery" "6795 Washington Street" "Yountville" "Yes" 38.4064975 -122.3672879
+"Godspeed Vineyards" "3655 Mount Veeder Rd" "Napa" "Yes" 38.390851 -122.439359
+"Goosecross Cellars" "1119 State Lane" "Yountville" "No" 38.4269305 -122.353621
+"Grgich Hills" "1829 St. Helena Highway " "Rutherford" "No" 38.4658959 -122.428224
+"Groth" "750 Oakville Cross Road" "Oakville" "Yes" 38.4483328 -122.3803005
+"Guilliams" "3851 Spring Mountain Rd" "St. Helena" "Yes" 38.521147 -122.541946
+"Gustavo Thrace" "1146 First St" "Napa" "Yes" 38.2986597 -122.2868637
+"Hagafen Cellars" "4160 Silverado Trail " "Napa" "No" 38.363464 -122.2917351
+"Hall Winery St. Helena" "401 St. Helena Highway S" "St. Helena" "No" 38.4891121 -122.452028
+"Hall Winery, Rutherford" "56 Auberge Road" "Rutherford" "Yes" 38.4963829 -122.4029048
+"Hartwell Vineyards" "5795 Silverado Trail" "Napa" "Yes" 38.4044332 -122.3290784
+"HdV Vineyards" "588 Trancas Street" "Napa" "Yes" 38.3257249 -122.2830894
+"Heibel Ranch Vineyards" "1241 Adams St. #1043" "St. Helena" "Yes" 38.5049889 -122.4705514
+"Heitz Cellars" "436 St. Helena Highway S" "St. Helena" "No" 38.4907495 -122.4508945
+"Helena View Johnston" "3500 Highway 128" "Calistoga" "Yes" 38.5470271 -122.5105237
+"Hendry" "3104 Redwood Road" "Napa" "Yes" 38.3195786 -122.3440621
+"Hess Collection" "4411 Redwood Road" "Napa" "No" 38.3380587 -122.3900926
+"Hestan Vineyards" "6548 Washington Street" "Yountville" "Yes" 38.4030545 -122.3626451
+"Hill Family Estate" "6512 Washington Street" "Yountville" "No" 38.401147 -122.359877
+"Honig Winery" "850 Rutherford Road " "Rutherford" "Yes" 38.472074 -122.407196
+"Hope & Grace" "6540 Washington Street" "Yountville" "No" 38.4028335 -122.3623408
+"Hopper Creek Winery" "6204 Washington Street" "Yountville" "Yes" 38.3880897 -122.3492822
+"Ideology Cellars" "5225 Solano Avenue" "Napa" "Yes" 38.363672 -122.339213
+"Ilsley" "6275 Silverado Trail " "Napa" "Yes" 38.4206532 -122.3372507
+"Inglenook" "1991 St. Helena Highway" "St. Helena" "No" 38.4543791 -122.4311026
+"James Cole" "5014 Silverado Trail" "Napa" "Yes" 38.3701095 -122.3009738
+"James Creek" "2249 James Creek Road" "Pope Valley" "Yes" 38.665635 -122.467148
+"Jarvis" "2970 Monticello Rd" "Napa" "Yes" 38.3544307 -122.2156816
+"Jericho Canyon Vineyard" "3292 Old Lawley Toll Road" "Calistoga" "Yes" 38.6211026 -122.5879421
+"Jessup Cellars" "6740 Washington Street" "Yountville" "No" 38.4059413 -122.3662368
+"Joseph Phelps" "200 Taplin Road" "St. Helena" "Yes" 38.5072308 -122.4287344
+"Judd's Hill" "2332 Silverado Trail" "Napa" "Yes" 38.3349138 -122.2810469
+"Juslyn Vineyards" "2900 Spring Mountain Rd" "St. Helena" "Yes" 38.5112716 -122.4965166
+"Kapcsandy Family Winery" "1001 State Lane" "Yountville" "Yes" 38.4226196 -122.3486162
+"Kelham Vineyards" "360 Zinfandel Lane" "St. Helena" "Yes" 38.4904245 -122.4359255
+"Kitchak Cellars" "1094 Hardman Ave" "Napa" "Yes" 38.3459986 -122.2780473
+"Krupp Brothers Estate" "3267 Soda Canyon Road" "Napa" "Yes" 38.4379931 -122.2942257
+"Kuleto Estate" "2470 Sage Canyon Road" "St. Helena" "Yes" 38.4991561 -122.3253285
+"La Jota Vineyard Co" "1102 Las Posadas Road" "Angwin" "Yes" 38.553751 -122.417847
+"Ladera Vineyards" "50 White Cottage Road S" "Angwin" "Yes" 38.5718326 -122.4562606
+"Laird Family Estate" "5055 Solano Avenue" "Napa" "No" 38.3540072 -122.3350044
+"Lamborn Family Vineyards" "Summit Lake Drive" "Angwin" "Yes" 38.6017123 -122.4622417
+"Larkmead Vineyards" "1100 Larkmead Lane" "Calistoga" "Yes" 38.5581062 -122.5246254
+"Las Bonitas" "1245 Main St" "Napa" "Yes" 38.30109 -122.28725
+"Levendi Estates" "4225 Solano Ave Ste. 633" "Napa" "Yes" 38.3364033 -122.323021
+"Liparita Cellars" "410 Lafata Street #203" "St. Helena" "Yes" 38.500046 -122.4584412
+"Lokoya" "7600 Saint Helena Hwy" "Oakville" "Yes" 38.4300594 -122.3895649
+"Long Meadow Ranch" "1775 Whitehall Lane" "St. Helena" "Yes" 38.4605941 -122.4638363
+"Louis M. Martini" "254 South St. Helena Hwy" "St. Helena" "No" 38.4921831 -122.4521448
+"Luna Vineyards" "2921 Silverado Trail" "Napa" "No" 38.3438822 -122.2841972
+"Madonna Estate" "5400 Old Sonoma Road" "Napa" "No" 38.2557697 -122.3412546
+"Madrigal Vineyards" "3718 N St. Helena Highway" "St. Helena" "Yes" 38.5195827 -122.4914505
+"Maldonado Vineyards" "3070 Lawley-Old Toll Road" "Calistoga" "Yes" 38.6089119 -122.59241
+"Mark Herold Wines" "710 First Street" "Napa" "No" 38.301007 -122.2823406
+"Markham Vineyards" "2812 St. Helena Highway N" "St. Helena" "No" 38.5192598 -122.4889283
+"Marston Family" "3600 White Sulphur Springs Rd" "St. Helena" "Yes" 38.4882601 -122.5285593
+"Mason Cellars" "714 First St" "Napa" "No" 38.3008938 -122.2824461
+"Mayacamas Vineyards" "1155 Lokoya Road" "Napa" "Yes" 38.36589 -122.433383
+"Mckenzie-Mueller" "2530 Las Amigas Road" "Napa" "Yes" 38.2321512 -122.3318904
+"Merryvale" "1000 Main St" "St. Helena" "No" 38.502202 -122.4642322
+"Michael Scott Wines" "2993 Brookwood Drive" "Napa" "Yes" 38.3142719 -122.3248809
+"Midsummer Cellars" "107 Lilac Lane" "St. Helena" "Yes" 38.540157 -122.470219
+"Miner Family Vineyards" "7850 Silverado Trail" "Oakville" "No" 38.4627304 -122.3709214
+"Modus Operandi" "5225 Solano Avenue" "Napa" "Yes" 38.363672 -122.339213
+"Montagna Vineyards" "1521 Sage Canyon Road" "St. Helena" "Yes" 38.4916664 -122.3444809
+"Monticello Vineyards" "4242 Big Ranch Road" "Napa" "No" 38.3618879 -122.3123393
+"Morlet Family Wines" "Rockland Road" "St. Helena" "Yes" 38.5151929 -122.5006647
+"Moss Creek Winery" "6015 Steele Canyon Road" "Napa" "Yes" 38.4459663 -122.194988
+"Mumm Napa" "8445 Silverado Trail" "Napa" "No" 38.4787998 -122.3936889
+"Napa Cellars" "2812 St. Helena Highway N" "St. Helena" "No" 38.5192598 -122.4889283
+"Napa Smith Winery" "1 Executive Way" "Napa" "No" 38.224348 -122.256794
+"Napa Valley College Estate" "2277 Napa Vallejo Highway" "Napa" "Yes" 38.2743057 -122.2777462
+"Napa Wine Co" "7830-40 St. Helena Hwy" "Oakville" "No" 38.4366584 -122.4019518
+"Neal Family Vineyards" "716 Liparita Road" "Angwin" "Yes" 38.5747156 -122.4630778
+"Newton Vineyards" "2555 Madrona Ave" "St. Helena" "Yes" 38.4957102 -122.4814916
+"Neyers Vineyards" "2153 Sage Canyon Road" "St. Helena" "Yes" 38.490335 -122.327693
+"Nickel & Nickel" "8164 St. Helena Highway " "Oakville" "Yes" 38.4430242 -122.4069472
+"Oakville Ranch" "7781 Silverado Trail" "Oakville" "Yes" 38.4580283 -122.3654545
+"O'Brien Estate Winery" "1200 Orchard Ave" "Napa" "Yes" 38.3458324 -122.3396806
+"Odette Estate" "5998 Silverado Trail" "Napa" "No" 38.405563 -122.327734
+"Olabisi Wines" "974 Lincoln Street" "Napa" "Yes" 38.3089316 -122.2928061
+"Opus One Winery" "7900 St. Helena Highway" "Oakville" "Yes" 38.4414865 -122.3996322
+"Orin Swift Cellars" "116 E. First Street" "Napa" "Yes" 38.304183 -122.272582
+"O'Shaugnessey Estate" "Call for directions" "Angwin" "Yes" 38.5757402 -122.4499796
+"Outpost Wines" "2075 Summit Lake Drive" "Angwin" "Yes" 38.596624 -122.46311
+"Palmaz Vineyards" "4029 Hagen Road" "Napa" "Yes" 38.3231899 -122.224353
+"Paloma Vineyard" "4013 Spring Mountain Road" "St. Helena" "Yes" 38.5228143 -122.5492726
+"Paoletti Estates" "4501 Silverado Trail" "Calistoga" "Yes" 38.5730124 -122.544003
+"Paradigm Winery" "1277 Dwyer Road" "Oakville" "Yes" 38.4205573 -122.3937753
+"Paraduxx" "7257 Silverado Trail" "Napa" "Yes" 38.4367484 -122.3517108
+"Patland Estate Vineyards" "2431 Soda Canyon Road" "Napa" "Yes" 38.420856 -122.301312
+"Peacock Family Vineyard" "3100 Spring Mountain Rd." "St. Helena" "Yes" 38.515596 -122.503681
+"Peju" "8466 St. Helena Highway" "St. Helena" "No" 38.5071899 -122.4735151
+"Phoenix Ranch" "1531 Atlas Peak Road" "Napa" "Yes" 38.343921 -122.268868
+"Pina Cellars" "8060 Silverado Trail" "Napa" "Yes" 38.4668934 -122.3768767
+"Pine Ridge Winery" "5901 Silverado Trail" "Napa" "Yes" 38.4053712 -122.3322907
+"Plumpjack" "620 Oakville Cross Road" "Oakville" "No" 38.4555611 -122.3738761
+"Polaris Wines" "855 Bordeaux Way St. 860" "Napa" "Yes" 38.249701 -122.271965
+"Pope Valley Winery" "6613 Pope Valley Road" "Pope Valley" "No" 38.6327355 -122.4532349
+"Prager Winery & Portworks" "1281Lewelling Ln" "St. Helena" "No" 38.491209 -122.454562
+"Pride Mountain Wines" "4026 Spring Mountain Road" "St. Helena" "Yes" 38.5273618 -122.5535175
+"Provenance Vineyards" "1695 St Helena Hwy" "St. Helena" "No" 38.4703165 -122.4331843
+"Pure Cru Wines" "451 Gateway Road West" "Napa" "No" 38.2259149 -122.2661455
+"Quintessa" "1601 Silverado Trail" "Rutherford" "Yes" 38.4868491 -122.4105677
+"Quixote Winery" "6126 Silverado Trail" "Napa" "Yes" 38.4178046 -122.3233652
+"Raymond Vineyards" "849 Zinfandel Lane" "St. Helena" "No" 38.485519 -122.43762
+"Razi Winery" "3108 Silverado Trail" "Napa" "Yes" 38.3492176 -122.2831595
+"Reata Winery" "1 Kirkland Ranch Road" "Napa" "No" 38.2203669 -122.2288018
+"Redmon Family Vineyards" "1185 Starr Ave" "St. Helena" "Yes" 38.5096739 -122.463912
+"Regusci Winery" "5584 Silverado Trail" "Napa" "Yes" 38.398385 -122.310878
+"Reid Family Vineyards" "1020 Borrette Lane" "Napa" "Yes" 38.31426 -122.348179
+"Revana Family" "2930 St. Helena Highway N" "St. Helena" "Yes" 38.5209767 -122.4927663
+"Reverie Winery" "1520 Diamond Mountain Rd" "Calistoga" "Yes" 38.5637811 -122.5774588
+"Reynolds Family Winery" "3266 Silverado Trail" "Napa" "Yes" 38.3556291 -122.2858766
+"Ritchie Creek" "4024 Spring Mountain Road" "St. Helena" "Yes" 38.529733 -122.562077
+"Road 31 Wine Co" "230 Pickwick Drive" "Napa" "Yes" 38.286755 -122.306034
+"Robert Biale Vineyards" "4038 Big Ranch Road" "Napa" "Yes" 38.3568549 -122.3091498
+"Robert Craig Winery" "625 Imperial Way" "Napa" "Yes" 38.3065663 -122.2825002
+"Robert Keenan" "3660 Spring Mountain Road" "St. Helena" "Yes" 38.5244909 -122.5376201
+"Robert Mondavi" "7801 St. Helena Highway" "Oakville" "No" 38.4415442 -122.4096962
+"Robert Sinskey" "6320 Silverado Trail" "Napa" "No" 38.4255293 -122.3369343
+"Robinson Family Vineyards" "5880 Silverado Trail" "Napa" "Yes" 38.410843 -122.319349
+"Rocca Vineyards" "129 Devlin Road" "Napa" "No" 38.2382592 -122.2693673
+"Rombauer Vineyards" "3522 Silverado Trail" "St. Helena" "No" 38.5531218 -122.4985321
+"Round Pond" "886 Rutherford Road" "Rutherford" "Yes" 38.4674727 -122.4056586
+"Rudd" "500 Oakville Cross Road" "Oakville" "Yes" 38.4553743 -122.3651652
+"Ruston Family" "2798 Spring Street" "St. Helena" "Yes" 38.491172 -122.479642
+"RustRidge Winery" "2910 Lower Chiles Road" "St. Helena" "Yes" 38.5297146 -122.3245317
+"Rutherford Grove" "1673 Hwy 29" "Rutherford" "No" 38.4698649 -122.4310404
+"Rutherford Hill" "200 Rutherford Hill Road " "Rutherford" "No" 38.4936491 -122.403715
+"Rutherford Ranch" "1680 Silverado Trail" "St. Helena" "No" 38.4885987 -122.4071073
+"Saddleback Cellars" "7802 Money Road" "Oakville" "Yes" 38.4493978 -122.3884599
+"Saintsbury" "1500 Los Carneros Ave" "Napa" "Yes" 38.2501452 -122.3255536
+"Salvestrin Wine Co" "397 Main Street" "St. Helena" "Yes" 38.4963647 -122.4613992
+"Sand T Cellars" "3194 Redwood Road" "Napa" "Yes" 38.323649 -122.349103
+"School House Vineyards " "3549 Langtry Rd" "St. Helena" "Yes" 38.5119666 -122.5326515
+"Schramsberg" "1400 Schramsberg Road" "Calistoga" "Yes" 38.550557 -122.538425
+"Schweiger Vineyards" "4015 Spring Mountain Rd " "St. Helena" "Yes" 38.5266543 -122.544822
+"Seavey Vineyard" "1310 Conn Valley Road" "St. Helena" "Yes" 38.5061579 -122.3992574
+"Sequoia Grove" "8338 St. Helena Highway" "Rutherford" "No" 38.449283 -122.4122701
+"Shafer" "6154 Silverado Trail" "Napa" "Yes" 38.421021 -122.326365
+"Sherwin Family Vineyards" "4060 Spring Mountain Rd" "St. Helena" "Yes" 38.529703 -122.558015
+"Signorello Vineyards" "4500 Silverado Trail" "Napa" "Yes" 38.3708864 -122.2962478
+"Silenus Vintners" "5225 Solano Avenue" "Napa" "Yes" 38.363672 -122.339213
+"Silver Oak Cellars" "915 Oakville Crossroad" "Oakville" "No" 38.4366996 -122.402785
+"Silverado Vineyards" "6121 Silverado Trail" "Napa" "No" 38.4145473 -122.3361947
+"Sky Vineyards" "1500 Lokoya Road" "Napa" "Yes" 38.3737206 -122.4297907
+"Smith Madrone" "4022 Spring Mountain Rd" "St. Helena" "Yes" 38.5245374 -122.5502826
+"Spottswoode Winery" "21902 Madrona Ave" "St. Helena" "Yes" 38.4978531 -122.4852479
+"Spring Mountain Vineyard" "2805 Spring Mountain Rd" "St. Helena" "Yes" 38.5055465 -122.4890305
+"St. Clair Brown" "1601 Action Ave" "Napa" "Yes" 38.3047436 -122.2861843
+"St. Clement" "2867 N St. Helena Hwy" "St. Helena" "No" 38.5192547 -122.4908014
+"St. Helena Winery" "100 Pratt Ave" "St. Helena" "Yes" 38.520096 -122.475163
+"St. Supery" "8440 St. Helena Highway" "Rutherford" "No" 38.4552938 -122.4141699
+"Staglin Family Vineyard" "1570 Bella Oaks Lane" "Rutherford" "Yes" 38.440094 -122.428426
+"Stag's Leap Wine Cellars" "5766 Silverado Trail" "Napa" "No" 38.401309 -122.325681
+"Stags' Leap Winery" "6150 Silverado Trail" "Napa" "Yes" 38.4157526 -122.3189589
+"Sterling Vineyards" "1111 Dunaweal Lane" "Calistoga" "No" 38.5697698 -122.5453835
+"Stonehedge Winery" "1004 Clinton Street" "Napa" "No" 38.301412 -122.2874724
+"Stoney Hill Vineyard" "3331 St. Helena Highway" "St. Helena" "Yes" 38.5355589 -122.5291753
+"Storybook Mountain" "3835 Highway 128" "Calistoga" "Yes" 38.598526 -122.641889
+"Sullivan Vineyards" "1090 Galleron Road" "Rutherford" "Yes" 38.477359 -122.429331
+"Summers Winery" "1171 Tubbs Lane" "Calistoga" "Yes" 38.5921766 -122.6052226
+"Summit Lake Vineyards" "2000 Summit Lake Drive" "Angwin" "Yes" 38.599305 -122.46083
+"Sutter Home" "277 St. Helena Hwy" "St. Helena" "No" 38.4915559 -122.4533524
+"Swanson Vineyards" "1271 Manley Lane" "Rutherford" "Yes" 38.4505209 -122.4191937
+"Tank Garage" "1020 Foothill Blvd #C" "Calistoga" "No" 38.575233 -122.579587
+"Taylor Family Vineyards" "5991 Silverado Trail" "Napa" "Yes" 38.4095901 -122.3365678
+"Teachworth" "4451 St. Helena Highway" "Calistoga" "Yes" 38.55845 -122.556703
+"Tedeschi Family Winery" "2779 Grant Street" "Calistoga" "Yes" 38.5903512 -122.5940491
+"Terra Valentine" "3787 Spring Mountain Rd" "St. Helena" "Yes" 38.5201679 -122.538028
+"Terraces" "1450 Silverado Trail" "Rutherford" "Yes" 38.4949779 -122.4213092
+"Titus Vineyards" "1/4 mile N of Deer Park Rd" "Calistoga" "Yes" 38.5818711 -122.5798946
+"Tofanelli Family" "1212 Pine Street" "Calistoga" "Yes" 38.5758719 -122.577582
+"Toolbox Wine Co" "1021 McKinstry Street" "Napa" "No" 38.3011404 -122.2822501
+"Trefethen Vineyards" "1160 Oak Knoll Ave" "Napa" "No" 38.3545467 -122.3247814
+"Tres Sabores" "1620 S. Whitehall Lane" "Rutherford" "Yes" 38.461091 -122.445945
+"Trespass Vineyard" "1859 Hillview Place" "St. Helena" "Yes" 38.501637 -122.47966
+"Trinchero Family" "8210 St. Helena Highway" "St. Helena" "Yes" 38.5071899 -122.4735151
+"Trinitas Cellars" "875 Bordeaux Way" "Napa" "Yes" 38.2463102 -122.2735862
+"Truchard Vineyard" "3234 Old Sonoma Road" "Napa" "Yes" 38.2856081 -122.3231614
+"Tudal Family" "1015 Big Tree Road" "St. Helena" "Yes" 38.54887 -122.50348
+"Tulocay Winery" "1426 Coombsville Road" "Napa" "Yes" 38.297995 -122.258697
+"Turnbull Wine Cellars" "8210 St. Helena Highway" "St. Helena" "No" 38.5071899 -122.4735151
+"Twomey Cellars" "1183 Dunaweal Lane" "Calistoga" "No" 38.565812 -122.5567181
+"V. Sattui" "1111 White Lane" "St. Helena" "No" 38.4890413 -122.4482411
+"Van Der Heyden Vineyards" "4057 Silverado Trail" "Napa" "Yes" 38.3578454 -122.289718
+"Varozza Vineyards" "514 Pratt Ave" "St. Helena" "Yes" 38.517153 -122.47527
+"Veedercrest Vineyards" "649 Main Streeet" "St. Helena" "Yes" 38.5000776 -122.462994
+"Vermeil Wines" "1255 Lincoln Ave" "Calistoga" "No" 38.5771329 -122.5797827
+"VGS Chateau Potelle" "1200 Dowdell Lane" "St. Helena" "No" 38.4979747 -122.4598283
+"Viader" "1120 Deer Park Road" "Deer Park" "Yes" 38.5599141 -122.4744928
+"Vincent Arroyo" "2361 Greenwood Ave" "Calistoga" "Yes" 38.5971318 -122.5892861
+"Vine Cliff" "7400 Silverado Trail" "Napa" "Yes" 38.4471484 -122.3505725
+"Vineyard 29" "2929 St. Helena Highway N" "St. Helena" "Yes" 38.5213317 -122.4937408
+"Vineyard 7 & 8" "4028 Spring Mountain Rd." "St. Helena" "Yes" 38.5260948 -122.5524806
+"Volker Eisele Family Estate" "3080 Lower Chiles Valley" "St. Helena" "Yes" 38.5326055 -122.3261622
+"Von Strasser" "1520 Diamond Mountain Rd" "Calistoga" "Yes" 38.5637811 -122.5774588
+"Wermuth Winery" "3942 Silverado Trail" "Calistoga" "No" 38.563986 -122.510445
+"Whetstone wine Cellars" "1130 Main Street" "Napa" "Yes" 38.2999211 -122.2860576
+"White Rock Vineyards" "1115 Loma Vista Dr" "Napa" "Yes" 38.3775369 -122.286576
+"Whitehall Lane" "1563 St. Helena Hwy" "St. Helena" "No" 38.4774195 -122.436509
+"William Cole Vineyards" "2849 St. Helena Highway N" "" "Yes" 38.5180069 -122.4905489
+"William Harrison" "1443 Silverado Trail" "St. Helena" "No" 38.494647 -122.422564
+"William Hill Estate" "1761 Atlas Peak Road" "Napa" "Yes" 38.3555165 -122.2700462
+"Wing Canyon Vineyard" "3100 Mt. Veeder Road" "Napa" "Yes" 38.378736 -122.41548
+"X Winery" "1405 2nd Street " "Napa" "Yes" 38.296712 -122.288099
+"York Creek" "3601 Langtry Road" "St. Helena" "Yes" 38.513218 -122.54041
+"Zacherle Wines" "1516 Harley Street" "Calistoga" "No" 38.583488 -122.582426
+"Zathila Vineyards" "2250 Lake County Hwy" "Calistoga" "Yes" 38.59183 -122.577861
+"ZD Winery" "8383 Silverado Trail" "Napa" "No" 38.476281 -122.3892037
+"1313 Main" "1313 Main Street" "Napa" "No" 38.3014333 -122.2873084
+"750 Wines" "1224 Adams Street" "St. Helena" "Yes" 38.5050151 -122.4709058
+"Acme Fine Wines" "1080 Fulton Lane" "St. Helena" "No" 38.508212 -122.472658
+"Backroom Wines" "1000 Main Street, Shop 120" "Napa" "No" 38.2975381 -122.286865
+"Bounty Hunter" "975 First Street" "Napa" "No" 38.2992728 -122.2851067
+"Calistoga Wine Stop" "1458 Lincoln Ave #2" "Calistoga" "No" 38.5795485 -122.5785406
+"Groezingers Wine Shop" "6484 Washington Street" "Yountville" "No" 38.3999028 -122.3588465
+"M(a)isonry" "6711 Washington Street" "Yountville" "Yes" 38.4054374 -122.366372
+"Mark Herold Wines" "710 First Street" "Napa" "No" 38.301007 -122.2823406
+"Napa General Store" "540 Main Street" "Napa" "No" 38.2959944 -122.2826192
+"Oxbow Wine Merchants" "610 First Street" "Napa" "No" 38.301602 -122.2815194
+"Salon St. Helena" "1118 Hunt Street" "St. Helena" "Yes" 38.5047135 -122.4683837
+"Square One" "1331 First Street" "Napa" "No" 38.2976001 -122.2884552
+"St. Helena Wine Center" "1321 Main Street" "St. Helena" "No" 38.5044691 -122.4692733
+"Uncorked at Oxbow" "605 First Street" "Napa" "No" 38.3012317 -122.2811112
+"V Wine Cellars" "6525 Washington Street" "Yountville" "No" 38.4020404 -122.36243
+"Vintner's Collective" "1245 Main St" "Napa" "No" 38.30109 -122.28725
+"Tank Garage" "1020 Foothill Blvd #C" "Calistoga" "No" 38.575233 -122.579587
